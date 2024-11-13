@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h1>Conversor de Celsius a Fahrenheit</h1>
+    <form method="POST">
+        <input type="number" name="celsius" placeholder="Grados Celsius" required>
+        <button type="submit">Convertir</button>
+    </form>
+    {% if fahrenheit %}
+        <h3>Temperatura en Fahrenheit: {{ fahrenheit }}°F</h3>
+    {% endif %}
+</body>
+</html>
